@@ -1,0 +1,2 @@
+web: gunicorn Despegue_Pizza.wsgi
+release: python manege.py runserver
