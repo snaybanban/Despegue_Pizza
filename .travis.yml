@@ -1,0 +1,9 @@
+deploy:
+  
+  provider: heroku
+  
+  app: tupizza
+  
+  api_key: e1f969b4-b9fc-4e2c-8033-bb638b2a12c3
+  
+     secure: $HEROKU_API_KEY
