@@ -1,2 +1,2 @@
 web: gunicorn Despegue_Pizza.wsgi
-release: python manege.py runserver
+release: python manege.py migrate
