@@ -1,5 +1,8 @@
 from django.urls import path, include
+from django.urls import admin
 from . import views
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     path('', views.index, name='home'),
@@ -14,4 +17,4 @@ urlpatterns = [
     path('orders', views.orders_view, name='orders'),
     path('vieworders', views.viewOrders_view, name='vieworders'),
     path('markComplete/<int:order_item_id>', views.markComplete_view, name='markcomplete')
-]
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
